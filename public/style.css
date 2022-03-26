@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    font-family: 'Poppins';
+
 }
 
 body {
@@ -15,4 +17,34 @@ nav {
 
 .nav--logo {
     max-width: 100px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 26px;
+    margin-left: 36px;
+    
+
+}
+
+.top--img{
+    max-width: 395px;
+    align-self: center;
+}
+
+.top--title{
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0;
+
+}
+
+.top--content{
+    width: 320px;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 16px;
 }
