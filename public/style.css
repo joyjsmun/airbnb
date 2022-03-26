@@ -7,6 +7,7 @@
 body {
     margin: 0;
     margin-left: 36px;
+    width: 550px;
 }
 
 nav {
@@ -15,6 +16,7 @@ nav {
     padding: 20px 36px;
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
+
 
 .gray{
     color: #918E9B;
@@ -38,7 +40,8 @@ nav {
 
 .top--img{
     max-width: 395px;
-    align-self: center;
+    margin-bottom: 40px;
+
 }
 
 .top--title{
@@ -49,7 +52,7 @@ nav {
 }
 
 .top--content{
-    width: 320px;
+    max-width: 320px;
     font-weight: 300;
     font-size: 16px;
     margin: 0;
@@ -58,10 +61,13 @@ nav {
 }
 
 .card {
+    flex: 0 0 auto; 
     margin: 0px;
     width: 175px;
     font-size: 12px;
     position: relative;
+    margin-right: 18px;
+    
 }
 
 .card--img{
@@ -78,10 +84,27 @@ nav {
 
 .card--sign{
     position: absolute;
-    width: 61px;
     background-color: white;
     border-radius: 2px;
-    margin: 6px;
+    top: 6px;
+    left:6px;
     padding: 1px;
     text-align: center;
+    font-weight: bold;
+
+}
+
+.card--price{
+    margin-top: auto;
+}
+
+.card--title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cards{
+    display: flex;
+    
 }

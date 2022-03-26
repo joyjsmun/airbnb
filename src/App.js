@@ -13,7 +13,9 @@ function App() {
     <div>
       <Navbar />
       <Top />
+      <div className="cards">
       {element}
+      </div>
     </div>
     )
 }
