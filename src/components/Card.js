@@ -1,15 +1,23 @@
-export default function Card() {
+export default function Card({item}) {
+    const openSpots = item.openSpots;
+    let text;
+    if(openSpots === 0){
+         text = "SOLD OUT"
+    }else if(openSpots > 0 && item.location === "Online"){
+         text = item.location
+    }
     return (
         <div className="card">
-                <img className="card--img" src="../images/katie-zaferes.png" />
+                {text ? <div className="card--sign">{text}</div> : null}
+                <img className="card--img" src={`../images/${item.coverImg}`} alt="card main img" />
                 <div>
-                    <img className="star" src="../images/star.png" />
-                    <span>5.0</span>
-                    <span className="gray">(6)</span>
+                    <img className="star" src="../images/star.png" alt="star img" />
+                    <span>{item.stats.rating}</span>
+                    <span className="gray">({item.stats.reviewCount})</span>
                     <span className="gray"></span>
-                    <span className="gray">USA</span>
-                    <p>Life lessons with Katie Zaferes</p>
-                    <p><span className="bold">From $136</span><span>/ person</span></p>
+                    <span className="gray">{item.location}</span>
+                    <p>{item.title}</p>
+                    <p><span className="bold">From ${item.price}</span><span>/ person</span></p>
                 </div>
         </div>
     )

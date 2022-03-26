@@ -61,6 +61,7 @@ nav {
     margin: 0px;
     width: 175px;
     font-size: 12px;
+    position: relative;
 }
 
 .card--img{
@@ -72,4 +73,15 @@ nav {
 .star{
     width: 14px;
     padding-right: 3px;
+}
+
+
+.card--sign{
+    position: absolute;
+    width: 61px;
+    background-color: white;
+    border-radius: 2px;
+    margin: 6px;
+    padding: 1px;
+    text-align: center;
 }
